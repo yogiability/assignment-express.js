@@ -1,9 +1,6 @@
 import express from 'express';
 import fs from 'fs';
  
-
-
-
 const app = express();
 const port = '3000';
  
@@ -21,7 +18,7 @@ app.get('/student/getdetails',(req,res) =>{
 
 
 
-app.get('/student/add',(req,res) =>{
+app.post('/student/add',(req,res) =>{
   
     const newObject = {
         studentFirstName:req.query.studentFirstName,
